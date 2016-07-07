@@ -5,6 +5,13 @@ block body
 		h2 Services we provide
 
 		//- Implement filtering here
+		ul(class="sort-alpha")
+			li
+				a(href='/services/?filter=repair') Filter by repair
+			li
+				a(href='/services/?filter=maintenance') Filter by maintenance
+			li
+				a(href='/services/?filter=cosmetic') Filter by cosmetic
 
 		for service in services
 			h4= service.job

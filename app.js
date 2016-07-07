@@ -22,6 +22,8 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/static',express.static('public'));
+
 app.use('/', router);
 
 // catch 404 and forward to error handler

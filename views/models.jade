@@ -5,6 +5,14 @@ block body
 		h2 Models we work on
 
 		//- Implement sorting here
+		ul(class="sort-alpha")
+			li
+				a(href='/models/?sort=asc') Sort ASC
+			li
+				a(href='/models/?sort=desc') Sort Desc
+			li
+				a(href='/models/?sort=no') Sort Normal
+
 
 		for model in models
 			h4= model
